@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+}
+
+.caption {
+    color: gray;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}

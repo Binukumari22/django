@@ -1,0 +1,12 @@
+<h2>Book List</h2>
+
+<ul>
+    {% for book in books %}
+        <li>{{ book.title }} - {{ book.author }}</li>
+    {% empty %}
+        <li>No books available</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'add_book' %}">Add New Book</a>
+
