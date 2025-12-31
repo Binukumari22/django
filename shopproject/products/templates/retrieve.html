@@ -1,0 +1,18 @@
+<h1>Product List</h1>
+<table border="1">
+<tr>
+    <th>ID</th><th>Name</th><th>Price</th><th>Actions</th>
+</tr>
+
+{% for products in product_list %}
+<tr>
+    <td>{{ products.id }}</td>
+    <td>{{ products.name }}</td>
+    <td>{{ products.price }}</td>
+    <td>
+        <a href="{% url 'generate_pdf' products.id %}">PDF</a> |
+        <a href="{% url 'send_product_email' products.id %}">Send Email</a>
+    </td>
+</tr>
+{% endfor %}
+</table>
